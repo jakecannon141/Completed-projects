@@ -1,0 +1,223 @@
+textarea {
+	resize: vertical;
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.my-1 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.my-2 {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.mb-1 {
+	margin-bottom: 4px;
+}
+
+.mr-1 {
+	margin-right: 8px;
+}
+
+.mt-1 {
+	margin-top: 4px;
+
+}
+
+.mt-2 {
+	margin-top: 16px;
+}
+
+.mt-3 {
+	margin-top: 24px;
+}
+
+.mt-4 {
+	margin-top: 32px;
+}
+
+
+.flex {
+	display: flex;
+}
+
+.h-1 {
+	height: 80px;
+}
+
+.w-1 {
+	width: 64px;
+}
+
+.w-2 {
+	width: 380px;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.max-width {
+	max-width: 1280px;
+}
+
+
+.flex-grow {
+	flex-grow: 1;
+}
+
+
+.flex-col {
+	flex-direction: column;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.gap-1 {
+	gap: 16px;
+}
+
+.gap-2 {
+	gap: 32px;
+}
+
+.rounded-border {
+	border-radius: 4px;
+}
+
+.rounded-border-2 {
+	border-radius: 8px;
+}
+
+.rounded-border-top {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.border {
+	border-width: 1px;
+}
+
+.grey-border {
+	border-color: rgb(209 213 219);
+}
+
+.blue-background {
+	--tw-bg-opacity: 1;
+	background-color: rgb(59 130 246);
+}
+
+.grey-background-1 {
+	--tw-bg-opacity: 1;
+	background-color: rgb(249 250 251);
+}
+
+.grey-background-2 {
+	--tw-bg-opacity: 1;
+	background-color: rgb(17 24 39);
+}
+
+.padding-1 {
+	padding: 8px;
+}
+
+.padding-2 {
+	padding: 10px;
+}
+
+.padding-3 {
+	padding: 16px;
+}
+
+.padding-x-1 {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.padding-x-2 {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.ParaGraphs {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.padding-y-1 {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.main-body {
+	padding-bottom: 32px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-ex-lg {
+	font-size: 36px;
+	line-height: 40px;
+}
+
+.text-lg {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.text-sm {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+.font-medium {
+	font-weight: 500;
+}
+
+.font-semibold {
+	font-weight: 600;
+}
+
+.grey-text-1 {
+	color: rgb(55 65 81);
+}
+
+.grey-text-2 {
+	color: rgb(17 24 39);
+}
+
+.green-text {
+	color: rgb(34 197 94);
+}
+
+.neutral-text {
+	color: rgb(115 115 115);
+}
+
+.white-text {
+	color: rgb(255 255 255);
+}
+
+.outer-column {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 10px;
+}

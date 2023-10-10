@@ -1,0 +1,161 @@
+let genreSelect = document.querySelector('select');
+let contentImage = document.getElementById('content-image');
+let contentGenre = document.getElementById('content-genre');
+let contentInfoDate = document.getElementById('content-info-date');          
+let contentInfoEpisode = document.getElementById('content-info-episode');
+let contentInfoDuration = document.getElementById('content-info-duration');
+let contentOverview = document.getElementById('content-overview');
+let contentPros = document.getElementById('content-pros');
+let contentCons = document.getElementById('content-cons');
+let contentPersonalReview = document.getElementById('content-personal-review');
+
+// Use document.querySelector, DO NOT USE document.querySelectorAll
+// Use document.querySelector to return my element with the correct selector
+// Use document.querySelector first then use document.getElementById for all other vars'. Content instead of genreSelect
+// Only use 1 = for the Vars'. Use 3 = for the selected genres after my if statement.
+// DO NOT FORGET TO CLOSE WITH ; AND TO USE BACKTICKS! WILL NOT WORK IF I DO NOT ENGAGE THEM!!!!!
+
+function onChangeGenre(select) {
+    var selectedGenre = select.value;
+
+    if (selectedGenre === 'Supernatural') {   
+        contentImage.src = 'https://cdn.myanimelist.net/images/anime/1228/111372.jpg';
+        contentImage.alt = 'Yu Yu Hakusho';
+        contentGenre.textContent = 'Supernatural';
+        contentInfoDate.textContent = 'January 4, 2023';
+        contentInfoEpisode.textContent = '63';
+        contentInfoDuration.textContent = '23 min per episode';
+        contentOverview.textContent = 'One fateful day, Yuusuke Urameshi, a 14-year-old delinquent with a dim future, gets a miraculous chance to turn it all around when he throws himself in front of a moving car to save a young boy. His ultimate sacrifice is so out of character that the authorities of the spirit realm are not yet prepared to let him pass on. Koenma, heir to the throne of the spirit realm, offers Yuusuke an opportunity to regain his life through completion of a series of tasks. With the guidance of the death god Botan, he is to thwart evil presences on Earth as a Spirit Detective.To help him on his venture, Yuusuke enlists ex-rival Kazuma Kuwabara, and two demons, Hiei and Kurama, who have criminal pasts. Together, they train and battle against enemies who would threaten humanity\'s very existence.';
+        contentPros.textContent = 'Intriguing plot with well crafted characters. The character development is done very well and this gives a unique and interesting story with many plot twists as well.';
+        contentCons.textContent = 'Pacing issues in later episodes and the anime being so short is the only cons.';
+        contentPersonalReview.innerText = "I think this is a really cool anime with a nice 90's astetic theme and feel to it. The concept is unique and very cool";
+
+    } else if (selectedGenre === 'Suspense') {
+        contentImage.src = 'https://cdn.myanimelist.net/images/anime/9/9453.jpg';
+        contentImage.alt = 'Death Note';
+        contentGenre.textContent = 'Suspense';                                          //done//
+        contentInfoDate.textContent = 'October 4, 2006';
+        contentInfoEpisode.textContent = '37';
+        contentInfoDuration.textContent = '23 min per episode';
+        contentOverview.textContent = `Brutal murders, petty thefts, and senseless violence pollute the human world. In contrast, the realm of death gods is a humdrum, unchanging gambling den. The ingenious 17-year-old Japanese student Light Yagami and sadistic god of death Ryuk share one belief: their worlds are rotten.For his own amusement, Ryuk drops his Death Note into the human world. Light stumbles upon it, deeming the first of its rules ridiculous: the human whose name is written in this note shall die. However, the temptation is too great, and Light experiments by writing a felon\'s name, which disturbingly enacts his first murder.
+        Aware of the terrifying godlike power that has fallen into his hands, Light—under the alias Kira—follows his wicked sense of justice with the ultimate goal of cleansing the world of all evil-doers. The meticulous mastermind detective L is already on his trail, but as Light's brilliance rivals L's, the grand chase for Kira turns into an intense battle of wits that can only end when one of them is dead.`;
+        contentPros.textContent = 'Intriguing plot, well-developed characters';
+        contentCons.textContent = 'Pacing issues in later episodes';
+        contentPersonalReview.textContent = "This is a very unique anime with a dark feel. It gives the perspective of the light side vs the dark side in a view from a detective sense.";
+    
+    } else if (selectedGenre === 'Action') {
+        contentImage.src = 'https://cdn.myanimelist.net/images/anime/1607/117271.jpg';     //done//
+        contentImage.alt = 'Dragon Ball';
+        contentGenre.textContent = 'Action';
+        contentInfoDate.textContent = 'February 26, 1986';
+        contentInfoEpisode.textContent = '153';
+        contentInfoDuration.textContent = '24 min per episode';
+        contentOverview.textContent = 'Gokuu Son is a young boy who lives in the woods all alone—that is, until a girl named Bulma runs into him in her search for a set of magical objects called the "Dragon Balls." Since the artifacts are said to grant one wish to whoever collects all seven, Bulma hopes to gather them and wish for a perfect boyfriend. Gokuu happens to be in possession of a dragon ball, but unfortunately for Bulma, he refuses to part ways with it, so she makes him a deal: he can tag along on her journey if he lets her borrow the dragon ball\'s power. With that, the two set off on the journey of a lifetime.They don\'t go on the journey alone. On the way, they meet the old Muten-Roshi and wannabe disciple Kuririn, with whom Gokuu trains to become a stronger martial artist for the upcoming World Martial Arts Tournament. However, it\'s not all fun and games; the ability to make any wish come true is a powerful one, and there are others who would do much worse than just wishing for a boyfriend. To stop those who would try to abuse the legendary power, they train to become stronger fighters, using their newfound strength to help the people around them along the way.';
+        contentPros.textContent = 'Exciting battles with memorable characters. This is the anime which helped to pave the way for anime as a genre.';
+        contentCons.textContent = 'Slow pacing in some arcs';
+        contentPersonalReview.textContent = "This is my favorite anime of all time. I love everything about this anime.";
+   
+    } else if (selectedGenre === 'Adventure') {
+        contentImage.src = 'https://cdn.myanimelist.net/images/anime/13/73834.jpg';       //done//
+        contentImage.alt = 'Pokemon';
+        contentGenre.textContent = 'Adventure';
+        contentInfoDate.textContent = 'February 26,2016';
+        contentInfoEpisode.textContent = '150';
+        contentInfoDuration.textContent = '24 min per episode';
+        contentOverview.textContent = 'Pokémon are peculiar creatures with a vast array of different abilities and appearances; many people, known as Pokémon trainers, capture and train them, often with the intent of battling others. Young Satoshi has not only dreamed of becoming a Pokémon trainer but also a "Pokémon Master," and on the arrival of his 10th birthday, he finally has a chance to make that dream a reality. Unfortunately for him, all three Pokémon available to beginning trainers have already been claimed and only Pikachu, a rebellious Electric-type Pokémon, remains. However, this chance encounter would mark the start of a lifelong friendship and an epic adventure!Setting off on a journey to become the very best, Satoshi and Pikachu travel across beautiful, sprawling regions with their friends Kasumi, a Water-type trainer, and Takeshi, a Rock-type trainer. But danger lurks around every corner. The infamous Team Rocket is always nearby, seeking to steal powerful Pokémon through nefarious schemes. It\'ll be up to Satoshi and his friends to thwart their efforts as he also strives to earn the eight Pokémon Gym Badges he\'ll need to challenge the Pokémon League, and eventually claim the title of Pokémon Master.';
+        contentPros.textContent = 'Exciting battles and so many different pokemon and types of pokemon. A very unique anime for everyone.';
+        contentCons.textContent = 'Sometimes it can be very slow with the pacing and not as engaging as other episodes.';
+        contentPersonalReview.textContent = "This is one of my favorite animes. I have so many childhood memories playing this game and watching the show.";
+    
+    } else if (selectedGenre === 'Comedy') {
+        contentImage.src = 'https://cdn.myanimelist.net/images/anime/12/76049.jpg';      //done//
+        contentImage.alt = 'One Punch Man';
+        contentGenre.textContent = 'Comedy';
+        contentInfoDate.textContent = 'October 5, 2015';
+        contentInfoEpisode.textContent = '24';
+        contentInfoDuration.textContent = '24 min per episode';
+        contentOverview.textContent = 'The seemingly unimpressive Saitama has a rather unique hobby: being a hero. In order to pursue his childhood dream, Saitama relentlessly trained for three years, losing all of his hair in the process. Now, Saitama is so powerful, he can defeat any enemy with just one punch. However, having no one capable of matching his strength has led Saitama to an unexpected problem—he is no longer able to enjoy the thrill of battling and has become quite bored.One day, Saitama catches the attention of 19-year-old cyborg Genos, who witnesses his power and wishes to become Saitama\'s disciple. Genos proposes that the two join the Hero Association in order to become certified heroes that will be recognized for their positive contributions to society. Saitama, who is shocked that no one knows who he is, quickly agrees. Meeting new allies and taking on new foes, Saitama embarks on a new journey as a member of the Hero Association to experience the excitement of battle he once felt.';
+        contentPros.textContent = 'Hilarious and great action scenes';
+        contentCons.textContent = 'Lack of character development for some side characters';
+        contentPersonalReview.textContent = "This anime is so unique with the fact it is the most plain looking character with the most OP power in all of anime. The premise of one punch is just hilarious to me.";
+    
+    } else if (selectedGenre === 'Fantasy') {
+        contentImage.src = 'https://cdn.myanimelist.net/images/anime/1107/100990.jpg';
+        contentImage.alt = 'Demon Slayer';
+        contentGenre.textContent = 'Fansasy';          //need
+        contentInfoDate.textContent = 'October 5, 2021';
+        contentInfoEpisode.textContent = '55';
+        contentInfoDuration.textContent = '24 min per episode';
+        contentOverview.textContent = 'Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado\'s shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night.When he finally arrives back home the next day, he is met with a horrifying sight—his whole family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants of his beloved sister\'s humanity.';
+        contentPros.textContent = 'Amazing fight scenes and the concept itself it just so awesome.';
+        contentCons.textContent = 'Takes too long inbetween seasons and some parts of the show are annoying.';
+        contentPersonalReview.textContent = "I am a big samurai fan and this combines the supernatural powers with the intensity of being a samurai which is an awesome concept.";
+    
+    } else if (selectedGenre === 'Drama') {
+        contentImage.src = 'https://cdn.myanimelist.net/images/anime/10/47347.jpg';
+        contentImage.alt = 'Attack on Titan';
+        contentGenre.textContent = 'Drama';
+        contentInfoDate.textContent = 'October 10, 2016';
+        contentInfoEpisode.textContent = '72';
+        contentInfoDuration.textContent = '32 min per episode';
+        contentOverview.textContent = 'Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called Titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal Titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Eren, his adopted sister Mikasa Ackerman, and his childhood friend Armin Arlert join the brutal war against the Titans and race to discover a way of defeating them before the last walls are breached.';
+        contentPros.textContent = 'The artstyle is beautiful and the progression of characters is amazing.';
+        contentCons.textContent = 'Extremely intense that would be too much for some viewers';
+        contentPersonalReview.textContent = "This is the darkest and most intense anime I have ever seen but one of the best.";
+
+    }
+}
+
+
+onChangeGenre(genreSelect);
+
+
+///////////Notes For Project//////////
+
+//use VAR for all selectors, do not use const or let. VAR lets you use variables throughout function and can change.
+//onChangeGenre is to display the default anime info. It is the function that displays selected info from my dropdown
+// genreSelect stores the element and is what allows me to select the specific genre
+//Function works by getting value of genre from select.value and then store it in selectedGENRE variable
+//selectedgenre is the select the specific anime- use it first at the start of each else if
+//use queryselector to select anime and then all the contents with generate with it
+// use === at the start of each else if to make sure it returns booleans     ***has to be 3 equal signs***
+//make sure to include ; at end of each content section or program will not run
+//have to use if for initial selected genre the use else if after for each
+//all of my contentGENRE, contentInfo, contentEpisode, etc are used to store my references for each element
+//
+
+
+
+
+
+
+
+
+
+///Questions///
+//id 6&7 are not showing in inspect mode and I do not know why
+//How to link the JS-everything is wrapped in script but still no population- do I need event listener??
+//how to get other thumbnail pics aligned
+
+
+
+//Issues//
+
+//For my personal review to populate what I have tried is.. 
+//1. Making content-personal-review is css and assigning different properties
+//2. Plugging an id for the personal review in the text area class
+
+//for moving pics to the column on left I have tried..
+//Believe adding 4 more div class to the mt-4 class will eleviate issue
+//1. Adding more divs to see if I did not close something properly. 
+//All 7 classes are listed identically and are all wrapped in the mt-4 class in my html but I only see 3 of the 7 when I am in inspect mode.
+//Problem potentially in the CSS???
+//Editing the .mt-1 class in css with flex to move it left. Besides flex I also tried justify content and align left.
+
+//For making correct pics pop up with correct genre I have tried..
+//All are structured the same. All links go to correct genre. 
+//Believe problem may be with my onchange
+
+
+
+

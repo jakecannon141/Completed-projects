@@ -1,0 +1,146 @@
+.top_body {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    position: relative;
+    padding: 200px;
+    margin: -10px -10px -10px -10px;
+    background-image: url("https://thederm.com/wp-content/uploads/2020/10/dermatologist-or-medispa-1200x600.png");
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    
+    
+}
+
+.intro {}
+
+.middle_body {
+    padding: 0px;
+}
+
+.dermal_fill {
+     padding: 0px;
+    
+}
+
+.face_ial {
+    padding: 0px;
+}
+
+.bo_tox {
+    padding: 0px;
+}
+
+.laser_hair_removal {
+    padding: 0px;
+}
+
+.fat_reduction {
+    padding: 0px;
+}
+
+.bottom_box_left {
+   padding: 0px;
+}
+
+.top_banner {
+    padding: 0px;
+}
+
+.bottom_box_right {
+  padding: 0px;
+}
+
+.bottom_box_middle {
+   
+    padding: 0px;
+}
+
+
+footer {
+    background-color: rgba(138, 112, 112, 0.788);
+    text-align: center;
+    color: white;
+    padding: 30px;
+    margin: 50px -10px -10px -10px;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: ivory;
+    padding: 0px;
+}
+
+h3 {
+    color: green;
+    margin: 25px 0px 25px 25px;
+}
+
+h1 {
+    color: rgba(138, 112, 112, 0.788);
+   position: relative;
+   bottom: -250px;
+   left: -425px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+    text-size-adjust: 200%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    background-color: rgba(138, 112, 112, 0.788);
+    padding: 25px;
+    margin: 50px -50px 50px -50px;
+    
+} 
+
+h4 {
+    color: green;
+    margin: 25px 0px 25px 25px;
+}
+p1 {
+    position: relative;
+    text-align: right;
+    right: -400px;
+    bottom: -175px;
+    color: rgba(138, 112, 112, 0.788);
+    font-family: 'Times New Roman', Times, serif
+    font-size: larger;
+    margin: 0px 50px 0px 50px;
+}
+
+
+ul{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: black
+    list-style-type: none;
+    font-size: larger;
+}
+
+p {
+font-family: 'Times New Roman', Times, serif;
+text-decoration: black;
+font-size: large;
+margin: 0px 50px 0px 50px;
+
+}
+
+p2 {
+    font-size: larger;
+    text-decoration: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px 0px 0px 0px;
+    padding-left: 50px;
+}
+
+ol {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: larger;
+    
+}
